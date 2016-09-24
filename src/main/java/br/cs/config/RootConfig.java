@@ -35,10 +35,10 @@ public class RootConfig
   {
     DriverManagerDataSource dataSource = new DriverManagerDataSource();
     
-    dataSource.setDriverClassName(this.env.getRequiredProperty("db.driver"));
-    dataSource.setUrl(this.env.getRequiredProperty("db.url"));
-    dataSource.setUsername(this.env.getRequiredProperty("db.username"));
-    dataSource.setPassword(this.env.getRequiredProperty("db.password"));
+    dataSource.setDriverClassName(this.env.getRequiredProperty(PROPERTY_NAME_DATABASE_DRIVER));
+    dataSource.setUrl(this.env.getRequiredProperty(PROPERTY_NAME_DATABASE_URL));
+    dataSource.setUsername(this.env.getRequiredProperty(PROPERTY_NAME_DATABASE_USERNAME));
+    dataSource.setPassword(this.env.getRequiredProperty(PROPERTY_NAME_DATABASE_PASSWORD));
     
     return dataSource;
   }
@@ -49,7 +49,7 @@ public class RootConfig
     LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
     entityManagerFactoryBean.setDataSource(dataSource());
     entityManagerFactoryBean.setPersistenceProviderClass(HibernatePersistence.class);
-    entityManagerFactoryBean.setPackagesToScan(new String[] { "br.cs.*" });
+    entityManagerFactoryBean.setPackagesToScan(new String[] { PROPERTY_NAME_ENTITYMANAGER_PACKAGES_TO_SCAN });
     
     entityManagerFactoryBean.setJpaProperties(hibProperties());
     
@@ -59,8 +59,8 @@ public class RootConfig
   private Properties hibProperties()
   {
     Properties properties = new Properties();
-    properties.put("hibernate.dialect", this.env.getRequiredProperty("hibernate.dialect"));
-    properties.put("hibernate.show_sql", this.env.getRequiredProperty("hibernate.show_sql"));
+    properties.put(PROPERTY_NAME_HIBERNATE_DIALECT, this.env.getRequiredProperty(PROPERTY_NAME_HIBERNATE_DIALECT));
+    properties.put(PROPERTY_NAME_HIBERNATE_SHOW_SQL, this.env.getRequiredProperty(PROPERTY_NAME_HIBERNATE_SHOW_SQL));
     return properties;
   }
   
