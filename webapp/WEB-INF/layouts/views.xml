@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="login" extends="TemplateThemeAdminSimples">
+	    <put-attribute name="body"	value="/WEB-INF/views/login.jsp" />
+	</definition>
+	
+	<definition name="empresaView" extends="TemplateBlank">
+	    <put-attribute name="body"	value="/WEB-INF/views/carteira/empresaView.jsp" />
+	</definition>
+	
+	
+	<definition name="papelView" extends="TemplateBlank">
+	    <put-attribute name="body"	value="/WEB-INF/views/carteira/papelView.jsp" />
+	</definition>
+	
+	<definition name="gerenciarPapelView" extends="TemplateBlank">
+	    <put-attribute name="body"	value="/WEB-INF/views/carteira/gerenciarPapelView.jsp" />
+	</definition>
+	
+	<definition name="cotacaoView" extends="TemplateBlank">
+	    <put-attribute name="body"	value="/WEB-INF/views/carteira/cotacaoView.jsp" />
+	</definition>
+	
+	<definition name="papeisView" extends="TemplateBlank">
+	    <put-attribute name="body"	value="/WEB-INF/views/carteira/papeisView.jsp" />
+	</definition>
+	
+	<definition name="analisarCotacaoAltaView" extends="TemplateBlank">
+	    <put-attribute name="body"	value="/WEB-INF/views/carteira/papelAnaliseTendenciaAltaView.jsp" />
+	</definition>
+	
+	<definition name="operacaoView" extends="TemplateBlank">
+	    <put-attribute name="body"	value="/WEB-INF/views/investir/operacaoView.jsp" />
+	</definition>
+	
+	<definition name="operacaoDetalheView" extends="TemplateBlank">
+	    <put-attribute name="body"	value="/WEB-INF/views/investir/operacaoDetalheView.jsp" />
+	</definition>
+	
+	<definition name="notaView" extends="TemplateBlank">
+	    <put-attribute name="body"	value="/WEB-INF/views/nota/notaView.jsp" />
+	</definition>
+	
+	<definition name="operacaoSaidaView" extends="TemplateBlank">
+	    <put-attribute name="body"	value="/WEB-INF/views/investir/operacaoSaida.jsp" />
+	</definition>
+	
+	<definition name="rendaFixaView" extends="TemplateBlank">
+	    <put-attribute name="body"	value="/WEB-INF/views/investir/rendaFixaView.jsp" />
+	</definition>
+	
+	<definition name="rendaFixaSaida" extends="TemplateBlank">
+	    <put-attribute name="body"	value="/WEB-INF/views/investir/rendaFixaSaida.jsp" />
+	</definition>
+	
+	<definition name="operacaoHistorioView" extends="TemplateBlank">
+	    <put-attribute name="body"	value="/WEB-INF/views/investir/historicoRendaVariavel.jsp" />
+	</definition>
+	
+	<definition name="chartRendaVariavel" extends="TemplateBlank">
+	    <put-attribute name="body"	value="/WEB-INF/views/chart/chartRendaVariavel.jsp" />
+	</definition>
+	
+	<definition name="curvaPatrimonio" extends="TemplateBlank">
+	    <put-attribute name="body"	value="/WEB-INF/views/chart/curvaPatrimonio.jsp" />
+	</definition>
+	
+	<definition name="angularLogin" extends="TemplateAngular">
+	    <put-attribute name="body"	value="/WEB-INF/views/angular/angularView.jsp" />
+	</definition>
+	
+	<definition name="index" extends="TemplateThemeAdmin">
+	    <put-attribute name="body"	value="/WEB-INF/views/index.jsp" />
+	</definition>
+	
+	<definition name="AddUser" extends="TemplateBlank">
+	    <put-attribute name="body"	value="/WEB-INF/views/AddUser.jsp" />
+	</definition>
+	
+	<definition name="feedsView" extends="TemplateBlank">
+	    <put-attribute name="body"	value="/WEB-INF/views/feed/feedsView.jsp" />
+	</definition>
+	
+	<definition name="configSiteView" extends="TemplateBlank">
+	    <put-attribute name="body"	value="/WEB-INF/views/config/configSiteView.jsp" />
+	</definition>
+	
+</tiles-definitions>

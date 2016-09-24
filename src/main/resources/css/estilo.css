@@ -1,0 +1,28 @@
+@CHARSET "ISO-8859-1";
+
+.error {
+	color: red;
+	font-weight: bold;
+}
+
+div.errors {
+	background-color: #ffcccc;
+	border: 2px solid red;
+	width: 25%;
+	margin-bottom: 10px;
+}
+
+label.error {
+	color: red;
+}
+
+input.error {
+	background-color: #ffcccc;
+}
+
+table.tabela {
+	display: inline-block;
+	vertical-align: middle;
+	width: 300px;
+	border: dotted;
+}
